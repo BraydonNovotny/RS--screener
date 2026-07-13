@@ -10,7 +10,6 @@ const data = loadData();
 
 const panels = [
   { key: 'RS_INTRADAY', label: 'Top RS — Intraday', sub: 'latest intraday % change vs prior close, minus QQQ same window (refreshes every 30 min, market hours)' },
-  { key: 'RS_1D', label: 'Top RS — 1 Day', sub: 'ticker % change minus QQQ % change, 1 trading day' },
   { key: 'RS_3D', label: 'Top RS — 3 Day', sub: 'ticker % change minus QQQ % change, 3 trading days' },
   { key: 'RS_5D', label: 'Top RS — 5 Day (1W)', sub: 'ticker % change minus QQQ % change, 5 trading days' },
 ];
@@ -41,7 +40,7 @@ h1{font-size:1.4rem;margin:0 0 4px}
 .meta{color:var(--sub);font-size:0.85rem}
 .grid{
   display:grid;
-  grid-template-columns:repeat(4,minmax(240px,1fr));
+  grid-template-columns:repeat(3,minmax(280px,1fr));
   gap:16px;
 }
 @media (max-width:1300px){ .grid{grid-template-columns:repeat(2,minmax(240px,1fr))} }
