@@ -1,0 +1,37 @@
+name: Update RS Screener
+
+on:
+  schedule:
+    # Fires every 15 min, all day, every day (UTC). scripts/run.js self-gates on the
+    # actual America/Los_Angeles local time (DST-safe) and no-ops outside market hours,
+    # so this single wide cron avoids needing a twice-yearly DST edit.
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rs-screener-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run scan + rebuild
+        run: node scripts/run.js
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "rs-screener-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json index.html
+          git diff --cached --quiet && echo "No changes to commit." || git commit -m "Auto-update RS screener data"
+          git push
