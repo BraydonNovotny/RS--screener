@@ -7,6 +7,19 @@ const scanEod = require('./scan_eod');
 const { build } = require('./build_site.js');
 
 async function main() {
+  // --force-intraday / --force-eod: bypass the weekday + market-hours gate entirely.
+  // Used for on-demand manual refreshes (e.g. Claude running this directly on request)
+  // rather than the scheduled cron path, which always goes through the normal gate below.
+  const forceIntraday = process.argv.includes('--force-intraday');
+  const forceEod = process.argv.includes('--force-eod');
+
+  if (forceIntraday || forceEod) {
+    if (forceIntraday) { console.log('Force: running scan_intraday.'); await scanIntraday.run(); }
+    if (forceEod) { console.log('Force: running scan_eod.'); await scanEod.run(); }
+    build();
+    return;
+  }
+
   const { decimalHour, weekday } = ptNowDecimalHour();
   const isWeekday = !['Sat', 'Sun'].includes(weekday);
 
