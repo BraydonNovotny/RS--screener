@@ -16,7 +16,7 @@ async function main() {
   }
 
   const inIntradayWindow = decimalHour >= 6.45 && decimalHour <= 12.60;
-  const inEodWindow = decimalHour >= 12.95 && decimalHour <= 14.10;
+  const inEodWindow = decimalHour >= 13.0 && decimalHour <= 14.10;
 
   let ran = false;
 
