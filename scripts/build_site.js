@@ -10,10 +10,10 @@ const data = loadData();
 
 const panels = [
   { key: 'RS_INTRADAY', label: 'Top RS — Intraday', sub: 'latest intraday % change vs prior close, minus QQQ same window (refreshes every 30 min, market hours)' },
-  { key: 'RS_ADR_3D', label: 'Top RS — 3 Day (ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 3 trading days', moveKey: '3D', admKey: 'ADR_MULT_3D' },
-  { key: 'RS_ADR_5D', label: 'Top RS — 5 Day (1W, ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 5 trading days', moveKey: '5D', admKey: 'ADR_MULT_5D' },
-  { key: 'RS_ADR_2W', label: 'Top RS — 2 Week (ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 10 trading days', moveKey: '2W', admKey: 'ADR_MULT_2W' },
-  { key: 'RS_ADR_1M', label: 'Top RS — 1 Month (ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 21 trading days', moveKey: '1M', admKey: 'ADR_MULT_1M' },
+  { key: 'RS_ADR_3D', label: 'Top RS — 3 Day (ADR-adj)', sub: 'move ÷ prior-day ADR14 vs QQQ same, 3 trading days', moveKey: '3D', admKey: 'ADR_MULT_3D' },
+  { key: 'RS_ADR_5D', label: 'Top RS — 5 Day (1W, ADR-adj)', sub: 'move ÷ prior-day ADR14 vs QQQ same, 5 trading days', moveKey: '5D', admKey: 'ADR_MULT_5D' },
+  { key: 'RS_ADR_2W', label: 'Top RS — 2 Week (ADR-adj)', sub: 'move ÷ prior-day ADR14 vs QQQ same, 10 trading days', moveKey: '2W', admKey: 'ADR_MULT_2W' },
+  { key: 'RS_ADR_1M', label: 'Top RS — 1 Month (ADR-adj)', sub: 'move ÷ prior-day ADR14 vs QQQ same, 21 trading days', moveKey: '1M', admKey: 'ADR_MULT_1M' },
 ];
 
 const html = `<!doctype html>

@@ -1,5 +1,8 @@
 // Fetches daily bars for the RS universe + QQQ, computes 3D/5D/2W/1M % change,
 // ADR14-normalized 2W/1M moves, and RS vs QQQ (both plain and ADR-adjusted).
+// ADR14 is computed as of the PRIOR trading day (excludes today's own bar) so
+// today's move doesn't inflate the denominator it's being measured against —
+// same look-ahead-avoidance convention as the setup-bar ADR% in the Qullamgie scorer.
 // Merges into data.json under tickers[SYM].{3D,5D,RS_3D,RS_5D,2W,1M,ADR14,ADR_MULT_2W,
 // ADR_MULT_1M,RS_2W,RS_1M,RS_ADR_2W,RS_ADR_1M}.
 // (1D was dropped 2026-07-13: it's always identical to the Intraday panel's value at market close, so redundant.)
@@ -30,8 +33,10 @@ async function fetchDaily(symbol) {
   const d2w = (close0 - closes[n - 11]) / closes[n - 11] * 100;  // 10 trading days back
   const d1m = (close0 - closes[n - 22]) / closes[n - 22] * 100; // 21 trading days back
 
-  const last14High = highs.slice(-14), last14Low = lows.slice(-14);
-  const adr14 = last14High.reduce((s, h, i) => s + (h - last14Low[i]), 0) / last14High.length / close0 * 100;
+  // 14 bars ending the day BEFORE today, normalized by yesterday's close (not today's).
+  const prevClose = closes[n - 2];
+  const prev14High = highs.slice(n - 15, n - 1), prev14Low = lows.slice(n - 15, n - 1);
+  const adr14 = prev14High.reduce((s, h, i) => s + (h - prev14Low[i]), 0) / prev14High.length / prevClose * 100;
 
   return {
     '3D': Math.round(d3 * 100) / 100,
