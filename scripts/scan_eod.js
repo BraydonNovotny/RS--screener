@@ -1,18 +1,48 @@
-// Fetches daily bars for the RS universe + QQQ, computes 3D/5D % change and RS vs QQQ.
-// Merges into data.json under tickers[SYM].{3D,5D,RS_3D,RS_5D}.
+// Fetches daily bars for the RS universe + QQQ, computes 3D/5D/2W/1M % change,
+// ADR14-normalized 2W/1M moves, and RS vs QQQ (both plain and ADR-adjusted).
+// Merges into data.json under tickers[SYM].{3D,5D,RS_3D,RS_5D,2W,1M,ADR14,ADR_MULT_2W,
+// ADR_MULT_1M,RS_2W,RS_1M,RS_ADR_2W,RS_ADR_1M}.
 // (1D was dropped 2026-07-13: it's always identical to the Intraday panel's value at market close, so redundant.)
 const { loadUniverse, loadData, saveData, fetchChart, pool, ptDateString } = require('./lib');
 
 async function fetchDaily(symbol) {
-  const result = await fetchChart(symbol, 'interval=1d&range=1mo');
-  const closes = (result.indicators?.quote?.[0]?.close || []).filter(c => c != null);
-  if (closes.length < 6) throw new Error(`${symbol}: only ${closes.length} daily closes available`);
+  // range=3mo gives enough trading days of buffer for the 1M (21td) lookback + 14td ADR window.
+  const result = await fetchChart(symbol, 'interval=1d&range=3mo');
+  const quote = result.indicators?.quote?.[0] || {};
+  const rawClose = quote.close || [];
+  const rawHigh = quote.high || [];
+  const rawLow = quote.low || [];
+
+  const closes = [], highs = [], lows = [];
+  for (let i = 0; i < rawClose.length; i++) {
+    if (rawClose[i] != null && rawHigh[i] != null && rawLow[i] != null) {
+      closes.push(rawClose[i]); highs.push(rawHigh[i]); lows.push(rawLow[i]);
+    }
+  }
+  if (closes.length < 22) throw new Error(`${symbol}: only ${closes.length} daily bars available`);
+
   const last6 = closes.slice(-6); // oldest -> newest, index 5 = most recent close
   const d3 = (last6[5] - last6[2]) / last6[2] * 100;
   const d5 = (last6[5] - last6[0]) / last6[0] * 100;
+
+  const n = closes.length;
+  const close0 = closes[n - 1];
+  const d2w = (close0 - closes[n - 11]) / closes[n - 11] * 100;  // 10 trading days back
+  const d1m = (close0 - closes[n - 22]) / closes[n - 22] * 100; // 21 trading days back
+
+  const last14High = highs.slice(-14), last14Low = lows.slice(-14);
+  const adr14 = last14High.reduce((s, h, i) => s + (h - last14Low[i]), 0) / last14High.length / close0 * 100;
+
   return {
     '3D': Math.round(d3 * 100) / 100,
     '5D': Math.round(d5 * 100) / 100,
+    '2W': Math.round(d2w * 100) / 100,
+    '1M': Math.round(d1m * 100) / 100,
+    ADR14: Math.round(adr14 * 100) / 100,
+    ADR_MULT_3D: Math.round((d3 / adr14) * 100) / 100,
+    ADR_MULT_5D: Math.round((d5 / adr14) * 100) / 100,
+    ADR_MULT_2W: Math.round((d2w / adr14) * 100) / 100,
+    ADR_MULT_1M: Math.round((d1m / adr14) * 100) / 100,
   };
 }
 
@@ -40,17 +70,33 @@ async function run() {
   }
 
   data.qqq['3D'] = qqq['3D']; data.qqq['5D'] = qqq['5D'];
+  data.qqq['2W'] = qqq['2W']; data.qqq['1M'] = qqq['1M'];
+  data.qqq.ADR14 = qqq.ADR14;
+  data.qqq.ADR_MULT_3D = qqq.ADR_MULT_3D; data.qqq.ADR_MULT_5D = qqq.ADR_MULT_5D;
+  data.qqq.ADR_MULT_2W = qqq.ADR_MULT_2W; data.qqq.ADR_MULT_1M = qqq.ADR_MULT_1M;
+
   for (const [sym, v] of Object.entries(tickerPcts)) {
     if (!data.tickers[sym]) data.tickers[sym] = {};
-    data.tickers[sym]['3D'] = v['3D']; data.tickers[sym]['5D'] = v['5D'];
-    data.tickers[sym].RS_3D = Math.round((v['3D'] - qqq['3D']) * 100) / 100;
-    data.tickers[sym].RS_5D = Math.round((v['5D'] - qqq['5D']) * 100) / 100;
+    const t = data.tickers[sym];
+    t['3D'] = v['3D']; t['5D'] = v['5D']; t['2W'] = v['2W']; t['1M'] = v['1M'];
+    t.ADR14 = v.ADR14;
+    t.ADR_MULT_3D = v.ADR_MULT_3D; t.ADR_MULT_5D = v.ADR_MULT_5D;
+    t.ADR_MULT_2W = v.ADR_MULT_2W; t.ADR_MULT_1M = v.ADR_MULT_1M;
+    t.RS_3D = Math.round((v['3D'] - qqq['3D']) * 100) / 100;
+    t.RS_5D = Math.round((v['5D'] - qqq['5D']) * 100) / 100;
+    t.RS_2W = Math.round((v['2W'] - qqq['2W']) * 100) / 100;
+    t.RS_1M = Math.round((v['1M'] - qqq['1M']) * 100) / 100;
+    // ADR-adjusted RS: how many more/fewer ADRs of move this name made vs QQQ's own ADR-normalized move.
+    t.RS_ADR_3D = Math.round((v.ADR_MULT_3D - qqq.ADR_MULT_3D) * 100) / 100;
+    t.RS_ADR_5D = Math.round((v.ADR_MULT_5D - qqq.ADR_MULT_5D) * 100) / 100;
+    t.RS_ADR_2W = Math.round((v.ADR_MULT_2W - qqq.ADR_MULT_2W) * 100) / 100;
+    t.RS_ADR_1M = Math.round((v.ADR_MULT_1M - qqq.ADR_MULT_1M) * 100) / 100;
   }
   data.updated = data.updated || {};
   data.updated.eod = ptDateString();
 
   saveData(data);
-  console.log(`QQQ 3D/5D: ${qqq['3D']}% / ${qqq['5D']}%  |  updated ${Object.keys(tickerPcts).length}/${universe.length} tickers`);
+  console.log(`QQQ 3D/5D/2W/1M: ${qqq['3D']}% / ${qqq['5D']}% / ${qqq['2W']}% / ${qqq['1M']}%  |  QQQ ADR14: ${qqq.ADR14}%  |  updated ${Object.keys(tickerPcts).length}/${universe.length} tickers`);
   if (failed.length) console.log('Failed:', JSON.stringify(failed));
 }
 

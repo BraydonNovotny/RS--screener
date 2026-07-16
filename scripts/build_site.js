@@ -10,8 +10,10 @@ const data = loadData();
 
 const panels = [
   { key: 'RS_INTRADAY', label: 'Top RS — Intraday', sub: 'latest intraday % change vs prior close, minus QQQ same window (refreshes every 30 min, market hours)' },
-  { key: 'RS_3D', label: 'Top RS — 3 Day', sub: 'ticker % change minus QQQ % change, 3 trading days' },
-  { key: 'RS_5D', label: 'Top RS — 5 Day (1W)', sub: 'ticker % change minus QQQ % change, 5 trading days' },
+  { key: 'RS_ADR_3D', label: 'Top RS — 3 Day (ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 3 trading days', moveKey: '3D', admKey: 'ADR_MULT_3D' },
+  { key: 'RS_ADR_5D', label: 'Top RS — 5 Day (1W, ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 5 trading days', moveKey: '5D', admKey: 'ADR_MULT_5D' },
+  { key: 'RS_ADR_2W', label: 'Top RS — 2 Week (ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 10 trading days', moveKey: '2W', admKey: 'ADR_MULT_2W' },
+  { key: 'RS_ADR_1M', label: 'Top RS — 1 Month (ADR-adj)', sub: 'move ÷ ADR14 vs QQQ move ÷ QQQ ADR14, 21 trading days', moveKey: '1M', admKey: 'ADR_MULT_1M' },
 ];
 
 const html = `<!doctype html>
@@ -90,7 +92,7 @@ const intradayUpdated = DATA.updated.intraday
   : 'not yet run today';
 
 document.getElementById('meta').textContent =
-  \`Universe: \${Object.keys(DATA.tickers).length} Liquid Leaders tickers · QQQ benchmark · EOD as of \${eodUpdated} · Intraday as of \${intradayUpdated}\`;
+  \`Universe: \${Object.keys(DATA.tickers).length} Liquid Leaders tickers · QQQ benchmark (ADR14 \${DATA.qqq.ADR14 != null ? DATA.qqq.ADR14.toFixed(2)+'%' : '—'}) · EOD as of \${eodUpdated} · Intraday as of \${intradayUpdated}\`;
 
 const panels = ${JSON.stringify(panels)};
 const grid = document.getElementById('grid');
@@ -99,37 +101,48 @@ function fmt(v){
   if (v == null) return '—';
   return (v>=0?'+':'') + v.toFixed(2) + '%';
 }
+function fmtX(v){
+  if (v == null) return '—';
+  return (v>=0?'+':'') + v.toFixed(2) + 'x';
+}
 
 panels.forEach((p, idx)=>{
+  const hasAdr = !!p.moveKey;
   const rows = Object.entries(DATA.tickers)
-    .map(([t,v])=>({ticker:t, rs:v[p.key]}))
+    .map(([t,v])=>({ticker:t, rs:v[p.key], move:v[p.moveKey], adm:v[p.admKey]}))
     .filter(r => r.rs != null)
     .sort((a,b)=>b.rs-a.rs);
 
   const maxAbs = Math.max(...rows.map(r=>Math.abs(r.rs)), 1);
+
+  const extraHead = hasAdr ? '<th style="text-align:right">Move</th><th style="text-align:right">ADR×</th>' : '';
 
   const panel = document.createElement('div');
   panel.className = 'panel' + (idx===0 ? ' featured' : '');
   panel.innerHTML = \`
     <div class="panel-head">
       <h2>\${p.label}</h2>
-      <div class="sub">\${p.sub}</div>
+      <div class="sub">\${p.sub}\${hasAdr ? ' · QQQ: '+fmt(DATA.qqq[p.moveKey])+' ('+fmtX(DATA.qqq[p.admKey])+' ADR)' : ''}</div>
     </div>
     <div class="table-scroll">
     <table>
-      <thead><tr><th></th><th>Ticker</th><th style="text-align:right">RS</th></tr></thead>
+      <thead><tr><th></th><th>Ticker</th>\${extraHead}<th style="text-align:right">RS</th></tr></thead>
       <tbody>
         \${rows.map((r,i)=>{
           const cls = r.rs>=0?'pos':'neg';
           const w = Math.max(4, Math.abs(r.rs)/maxAbs*60);
           const color = r.rs>=0 ? 'var(--pos)' : 'var(--neg)';
+          const extraCells = hasAdr
+            ? \`<td class="rs \${r.move>=0?'pos':'neg'}">\${fmt(r.move)}</td><td class="rs">\${fmtX(r.adm)}</td>\`
+            : '';
           return \`<tr>
             <td class="rank">\${i+1}</td>
             <td class="ticker">\${r.ticker}</td>
+            \${extraCells}
             <td class="rs \${cls}">
               <div class="bar-wrap">
                 <div class="bar" style="width:\${w}px;background:\${color}"></div>
-                <span>\${fmt(r.rs)}</span>
+                <span>\${hasAdr ? fmtX(r.rs) : fmt(r.rs)}</span>
               </div>
             </td>
           </tr>\`;
