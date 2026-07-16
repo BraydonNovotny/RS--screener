@@ -46,10 +46,20 @@ async function run() {
   }
 
   data.qqq.INTRADAY = qqqPct;
+  // ADR-adjusted: reuse the prior-day ADR14 already on file from the last EOD scan
+  // (today's ADR14 isn't known yet mid-session) to normalize the intraday move so far.
+  const qqqAdr = data.qqq.ADR14;
+  if (qqqAdr) data.qqq.ADR_MULT_INTRADAY = Math.round((qqqPct / qqqAdr) * 100) / 100;
+
   for (const [sym, pct] of Object.entries(tickerPct)) {
     if (!data.tickers[sym]) data.tickers[sym] = {};
-    data.tickers[sym].INTRADAY = pct;
-    data.tickers[sym].RS_INTRADAY = Math.round((pct - qqqPct) * 100) / 100;
+    const t = data.tickers[sym];
+    t.INTRADAY = pct;
+    t.RS_INTRADAY = Math.round((pct - qqqPct) * 100) / 100;
+    if (t.ADR14 && qqqAdr) {
+      t.ADR_MULT_INTRADAY = Math.round((pct / t.ADR14) * 100) / 100;
+      t.RS_ADR_INTRADAY = Math.round((t.ADR_MULT_INTRADAY - data.qqq.ADR_MULT_INTRADAY) * 100) / 100;
+    }
   }
   data.updated = data.updated || {};
   data.updated.intraday = new Date().toISOString();
