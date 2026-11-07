@@ -19,6 +19,8 @@ function loadData() {
 }
 
 function saveData(data) {
+  // drop tickers that have left the universe so panels only show current names
+  try { const u = new Set(loadUniverse()); for (const k of Object.keys(data.tickers || {})) if (!u.has(k)) delete data.tickers[k]; } catch (e) {}
   fs.writeFileSync(DATA_FILE, JSON.stringify(data, null, 2) + '\n');
 }
 
