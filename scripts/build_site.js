@@ -92,7 +92,7 @@ const intradayUpdated = DATA.updated.intraday
   : 'not yet run today';
 
 document.getElementById('meta').textContent =
-  \`Universe: \${Object.keys(DATA.tickers).length} Liquid Leaders tickers · QQQ benchmark (ADR14 \${DATA.qqq.ADR14 != null ? DATA.qqq.ADR14.toFixed(2)+'%' : '—'}) · EOD as of \${eodUpdated} · Intraday as of \${intradayUpdated}\`;
+  \`Universe: \${Object.keys(DATA.tickers).length} Huge + Big movers + Liquid Leaders tickers · QQQ benchmark (ADR14 \${DATA.qqq.ADR14 != null ? DATA.qqq.ADR14.toFixed(2)+'%' : '—'}) · EOD as of \${eodUpdated} · Intraday as of \${intradayUpdated}\`;
 
 const panels = ${JSON.stringify(panels)};
 const grid = document.getElementById('grid');
