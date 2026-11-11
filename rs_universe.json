@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T21:23:34.588Z",
+  "last_updated": "2026-11-11T02:11:09.339Z",
   "tiers": {
     "HUGE": [
       "NVDA",
@@ -23,8 +23,8 @@
       "SKHY",
       "LRCX",
       "MSTR",
-      "NOW",
       "QCOM",
+      "NOW",
       "KLAC",
       "HOOD",
       "CSCO",
@@ -125,8 +125,8 @@
     "SKHY",
     "LRCX",
     "MSTR",
-    "NOW",
     "QCOM",
+    "NOW",
     "KLAC",
     "HOOD",
     "CSCO",
