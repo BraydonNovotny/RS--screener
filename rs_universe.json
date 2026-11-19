@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T21:13:02.797Z",
+  "last_updated": "2026-11-19T00:04:56.962Z",
   "tiers": {
     "HUGE": [
       "AAOI",
@@ -20,6 +20,7 @@
       "SNDK",
       "BABA",
       "NOW",
+      "CRCL",
       "AXTI",
       "MRVL",
       "BE",
@@ -57,8 +58,8 @@
     ],
     "BIG": [
       "TXN",
-      "CRWD",
       "PANW",
+      "CRWD",
       "ADI",
       "ANET",
       "SHOP",
@@ -112,6 +113,7 @@
     "SNDK",
     "BABA",
     "NOW",
+    "CRCL",
     "AXTI",
     "MRVL",
     "BE",
@@ -147,8 +149,8 @@
     "AMZN",
     "AMD",
     "TXN",
-    "CRWD",
     "PANW",
+    "CRWD",
     "ADI",
     "ANET",
     "SHOP",
