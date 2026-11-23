@@ -2,7 +2,7 @@
   "qqq": {
     "3D": -7.35,
     "5D": -10.48,
-    "INTRADAY": 7.29,
+    "INTRADAY": 7.23,
     "2W": -7.23,
     "1M": -13.6,
     "ADR14": 2.59,
@@ -10,11 +10,11 @@
     "ADR_MULT_5D": -4.05,
     "ADR_MULT_2W": -2.79,
     "ADR_MULT_1M": -5.25,
-    "ADR_MULT_INTRADAY": 2.81
+    "ADR_MULT_INTRADAY": 2.79
   },
   "updated": {
     "eod": "2026-11-20",
-    "intraday": "2026-11-23T16:00:25.611Z"
+    "intraday": "2026-11-23T16:30:19.746Z"
   },
   "tickers": {
     "AMD": {
@@ -22,8 +22,8 @@
       "5D": -21.13,
       "RS_3D": -8.98,
       "RS_5D": -10.65,
-      "INTRADAY": 8.04,
-      "RS_INTRADAY": 0.75,
+      "INTRADAY": 8.58,
+      "RS_INTRADAY": 1.35,
       "2W": -6.19,
       "1M": -17.07,
       "ADR14": 8.67,
@@ -37,16 +37,16 @@
       "RS_ADR_5D": 1.61,
       "RS_ADR_2W": 2.08,
       "RS_ADR_1M": 3.28,
-      "ADR_MULT_INTRADAY": 0.93,
-      "RS_ADR_INTRADAY": -1.88
+      "ADR_MULT_INTRADAY": 0.99,
+      "RS_ADR_INTRADAY": -1.8
     },
     "CRWD": {
       "3D": 4.48,
       "5D": 1.24,
       "RS_3D": 11.83,
       "RS_5D": 11.72,
-      "INTRADAY": -11.54,
-      "RS_INTRADAY": -18.83,
+      "INTRADAY": -10.74,
+      "RS_INTRADAY": -17.97,
       "2W": 5.77,
       "1M": -3.58,
       "ADR14": 5.74,
@@ -60,16 +60,16 @@
       "RS_ADR_5D": 4.27,
       "RS_ADR_2W": 3.8,
       "RS_ADR_1M": 4.63,
-      "ADR_MULT_INTRADAY": -2.01,
-      "RS_ADR_INTRADAY": -4.82
+      "ADR_MULT_INTRADAY": -1.87,
+      "RS_ADR_INTRADAY": -4.66
     },
     "HOOD": {
       "3D": -10.63,
       "5D": -20.58,
       "RS_3D": -3.28,
       "RS_5D": -10.1,
-      "INTRADAY": 10.45,
-      "RS_INTRADAY": 3.16,
+      "INTRADAY": 9.44,
+      "RS_INTRADAY": 2.21,
       "2W": -23.58,
       "1M": -35.98,
       "ADR14": 6.56,
@@ -83,16 +83,16 @@
       "RS_ADR_5D": 0.91,
       "RS_ADR_2W": -0.8,
       "RS_ADR_1M": -0.24,
-      "ADR_MULT_INTRADAY": 1.59,
-      "RS_ADR_INTRADAY": -1.22
+      "ADR_MULT_INTRADAY": 1.44,
+      "RS_ADR_INTRADAY": -1.35
     },
     "HPE": {
       "3D": -11.77,
       "5D": -15.79,
       "RS_3D": -4.42,
       "RS_5D": -5.31,
-      "INTRADAY": 13.51,
-      "RS_INTRADAY": 6.22,
+      "INTRADAY": 13.13,
+      "RS_INTRADAY": 5.9,
       "2W": -9.17,
       "1M": -26.69,
       "ADR14": 6.83,
@@ -106,16 +106,16 @@
       "RS_ADR_5D": 1.74,
       "RS_ADR_2W": 1.45,
       "RS_ADR_1M": 1.34,
-      "ADR_MULT_INTRADAY": 1.98,
-      "RS_ADR_INTRADAY": -0.83
+      "ADR_MULT_INTRADAY": 1.92,
+      "RS_ADR_INTRADAY": -0.87
     },
     "LRCX": {
       "3D": -12.94,
       "5D": -18.81,
       "RS_3D": -5.59,
       "RS_5D": -8.33,
-      "INTRADAY": 14.19,
-      "RS_INTRADAY": 6.9,
+      "INTRADAY": 14.68,
+      "RS_INTRADAY": 7.45,
       "2W": -8.49,
       "1M": -20.3,
       "ADR14": 6.88,
@@ -129,16 +129,16 @@
       "RS_ADR_5D": 1.31,
       "RS_ADR_2W": 1.56,
       "RS_ADR_1M": 2.3,
-      "ADR_MULT_INTRADAY": 2.06,
-      "RS_ADR_INTRADAY": -0.75
+      "ADR_MULT_INTRADAY": 2.13,
+      "RS_ADR_INTRADAY": -0.66
     },
     "MRNA": {
       "3D": -6.11,
       "5D": -13.08,
       "RS_3D": 1.24,
       "RS_5D": -2.6,
-      "INTRADAY": 8.67,
-      "RS_INTRADAY": 1.38,
+      "INTRADAY": 8.32,
+      "RS_INTRADAY": 1.09,
       "2W": -23.62,
       "1M": -4.18,
       "ADR14": 8.99,
@@ -152,16 +152,16 @@
       "RS_ADR_5D": 2.6,
       "RS_ADR_2W": 0.16,
       "RS_ADR_1M": 4.79,
-      "ADR_MULT_INTRADAY": 0.96,
-      "RS_ADR_INTRADAY": -1.85
+      "ADR_MULT_INTRADAY": 0.93,
+      "RS_ADR_INTRADAY": -1.86
     },
     "MRVL": {
       "3D": -18.32,
       "5D": -22.5,
       "RS_3D": -10.97,
       "RS_5D": -12.02,
-      "INTRADAY": 19.33,
-      "RS_INTRADAY": 12.04,
+      "INTRADAY": 19.5,
+      "RS_INTRADAY": 12.27,
       "2W": -13.96,
       "1M": -45.63,
       "ADR14": 9.47,
@@ -175,16 +175,16 @@
       "RS_ADR_5D": 1.67,
       "RS_ADR_2W": 1.32,
       "RS_ADR_1M": 0.43,
-      "ADR_MULT_INTRADAY": 2.04,
-      "RS_ADR_INTRADAY": -0.77
+      "ADR_MULT_INTRADAY": 2.06,
+      "RS_ADR_INTRADAY": -0.73
     },
     "MU": {
       "3D": -16.86,
       "5D": -23.9,
       "RS_3D": -9.51,
       "RS_5D": -13.42,
-      "INTRADAY": 18.99,
-      "RS_INTRADAY": 11.7,
+      "INTRADAY": 19.42,
+      "RS_INTRADAY": 12.19,
       "2W": -14.16,
       "1M": -30.85,
       "ADR14": 7.83,
@@ -198,16 +198,16 @@
       "RS_ADR_5D": 1,
       "RS_ADR_2W": 0.98,
       "RS_ADR_1M": 1.31,
-      "ADR_MULT_INTRADAY": 2.43,
-      "RS_ADR_INTRADAY": -0.38
+      "ADR_MULT_INTRADAY": 2.48,
+      "RS_ADR_INTRADAY": -0.31
     },
     "NBIS": {
       "3D": -23.53,
       "5D": -30.03,
       "RS_3D": -16.18,
       "RS_5D": -19.55,
-      "INTRADAY": 24.71,
-      "RS_INTRADAY": 17.42,
+      "INTRADAY": 24.46,
+      "RS_INTRADAY": 17.23,
       "2W": -37.38,
       "1M": -49.06,
       "ADR14": 13.91,
@@ -221,7 +221,7 @@
       "RS_ADR_5D": 1.89,
       "RS_ADR_2W": 0.1,
       "RS_ADR_1M": 1.72,
-      "ADR_MULT_INTRADAY": 1.78,
+      "ADR_MULT_INTRADAY": 1.76,
       "RS_ADR_INTRADAY": -1.03
     },
     "NOW": {
@@ -229,8 +229,8 @@
       "5D": -14.37,
       "RS_3D": 1.6,
       "RS_5D": -3.89,
-      "INTRADAY": 5.11,
-      "RS_INTRADAY": -2.18,
+      "INTRADAY": 5.24,
+      "RS_INTRADAY": -1.99,
       "2W": -14.14,
       "1M": -44.23,
       "ADR14": 5.01,
@@ -244,16 +244,16 @@
       "RS_ADR_5D": 1.18,
       "RS_ADR_2W": -0.03,
       "RS_ADR_1M": -3.57,
-      "ADR_MULT_INTRADAY": 1.02,
-      "RS_ADR_INTRADAY": -1.79
+      "ADR_MULT_INTRADAY": 1.05,
+      "RS_ADR_INTRADAY": -1.74
     },
     "PANW": {
       "3D": 11.07,
       "5D": 6.61,
       "RS_3D": 18.42,
       "RS_5D": 17.09,
-      "INTRADAY": 3.17,
-      "RS_INTRADAY": -4.12,
+      "INTRADAY": 3.4,
+      "RS_INTRADAY": -3.83,
       "2W": 9.46,
       "1M": -3.21,
       "ADR14": 4.87,
@@ -267,16 +267,16 @@
       "RS_ADR_5D": 5.41,
       "RS_ADR_2W": 4.73,
       "RS_ADR_1M": 4.59,
-      "ADR_MULT_INTRADAY": 0.65,
-      "RS_ADR_INTRADAY": -2.16
+      "ADR_MULT_INTRADAY": 0.7,
+      "RS_ADR_INTRADAY": -2.09
     },
     "TSLA": {
       "3D": -9.07,
       "5D": -11.43,
       "RS_3D": -1.72,
       "RS_5D": -0.95,
-      "INTRADAY": 12.92,
-      "RS_INTRADAY": 5.63,
+      "INTRADAY": 13.01,
+      "RS_INTRADAY": 5.78,
       "2W": -3.51,
       "1M": -7.73,
       "ADR14": 4.34,
@@ -290,16 +290,16 @@
       "RS_ADR_5D": 1.42,
       "RS_ADR_2W": 1.98,
       "RS_ADR_1M": 3.47,
-      "ADR_MULT_INTRADAY": 2.98,
-      "RS_ADR_INTRADAY": 0.17
+      "ADR_MULT_INTRADAY": 3,
+      "RS_ADR_INTRADAY": 0.21
     },
     "U": {
       "3D": -11.32,
       "5D": -15.43,
       "RS_3D": -3.97,
       "RS_5D": -4.95,
-      "INTRADAY": 4.87,
-      "RS_INTRADAY": -2.42,
+      "INTRADAY": 5.87,
+      "RS_INTRADAY": -1.36,
       "2W": -13.26,
       "1M": 10.9,
       "ADR14": 6.55,
@@ -313,12 +313,12 @@
       "RS_ADR_5D": 1.7,
       "RS_ADR_2W": 0.77,
       "RS_ADR_1M": 6.91,
-      "ADR_MULT_INTRADAY": 0.74,
-      "RS_ADR_INTRADAY": -2.07
+      "ADR_MULT_INTRADAY": 0.9,
+      "RS_ADR_INTRADAY": -1.89
     },
     "AAOI": {
-      "INTRADAY": 20.73,
-      "RS_INTRADAY": 13.44,
+      "INTRADAY": 18.84,
+      "RS_INTRADAY": 11.61,
       "3D": -27.47,
       "5D": -34.26,
       "2W": -34.57,
@@ -336,12 +336,12 @@
       "RS_ADR_5D": 1.83,
       "RS_ADR_2W": 0.54,
       "RS_ADR_1M": 1.89,
-      "ADR_MULT_INTRADAY": 1.35,
-      "RS_ADR_INTRADAY": -1.46
+      "ADR_MULT_INTRADAY": 1.22,
+      "RS_ADR_INTRADAY": -1.57
     },
     "AXTI": {
-      "INTRADAY": 26.92,
-      "RS_INTRADAY": 19.63,
+      "INTRADAY": 26.28,
+      "RS_INTRADAY": 19.05,
       "3D": -16.56,
       "5D": -27.37,
       "2W": -21.84,
@@ -359,12 +359,12 @@
       "RS_ADR_5D": 2.37,
       "RS_ADR_2W": 1.45,
       "RS_ADR_1M": 2.73,
-      "ADR_MULT_INTRADAY": 1.65,
-      "RS_ADR_INTRADAY": -1.16
+      "ADR_MULT_INTRADAY": 1.61,
+      "RS_ADR_INTRADAY": -1.18
     },
     "BE": {
-      "INTRADAY": 19.78,
-      "RS_INTRADAY": 12.49,
+      "INTRADAY": 20.89,
+      "RS_INTRADAY": 13.66,
       "3D": -18.1,
       "5D": -26,
       "2W": -17.99,
@@ -382,12 +382,12 @@
       "RS_ADR_5D": 1.62,
       "RS_ADR_2W": 1.11,
       "RS_ADR_1M": 2.01,
-      "ADR_MULT_INTRADAY": 1.85,
-      "RS_ADR_INTRADAY": -0.96
+      "ADR_MULT_INTRADAY": 1.95,
+      "RS_ADR_INTRADAY": -0.84
     },
     "CCL": {
-      "INTRADAY": 6.07,
-      "RS_INTRADAY": -1.22,
+      "INTRADAY": 5.72,
+      "RS_INTRADAY": -1.51,
       "3D": -5.74,
       "5D": -9.19,
       "2W": -10.26,
@@ -405,12 +405,12 @@
       "RS_ADR_5D": 1.75,
       "RS_ADR_2W": 0.22,
       "RS_ADR_1M": 4.76,
-      "ADR_MULT_INTRADAY": 1.52,
-      "RS_ADR_INTRADAY": -1.29
+      "ADR_MULT_INTRADAY": 1.43,
+      "RS_ADR_INTRADAY": -1.36
     },
     "CRWV": {
-      "INTRADAY": 23.87,
-      "RS_INTRADAY": 16.58,
+      "INTRADAY": 23.1,
+      "RS_INTRADAY": 15.87,
       "3D": -20.99,
       "5D": -25.8,
       "2W": -15.04,
@@ -428,12 +428,12 @@
       "RS_ADR_5D": 1.99,
       "RS_ADR_2W": 1.59,
       "RS_ADR_1M": 2.93,
-      "ADR_MULT_INTRADAY": 1.91,
-      "RS_ADR_INTRADAY": -0.9
+      "ADR_MULT_INTRADAY": 1.84,
+      "RS_ADR_INTRADAY": -0.95
     },
     "GME": {
-      "INTRADAY": 0.34,
-      "RS_INTRADAY": -6.95,
+      "INTRADAY": 0.6,
+      "RS_INTRADAY": -6.63,
       "3D": 4.81,
       "5D": 2.82,
       "2W": 5.81,
@@ -451,12 +451,12 @@
       "RS_ADR_5D": 4.82,
       "RS_ADR_2W": 4.37,
       "RS_ADR_1M": 6.53,
-      "ADR_MULT_INTRADAY": 0.09,
-      "RS_ADR_INTRADAY": -2.72
+      "ADR_MULT_INTRADAY": 0.16,
+      "RS_ADR_INTRADAY": -2.63
     },
     "INTC": {
-      "INTRADAY": 12.5,
-      "RS_INTRADAY": 5.21,
+      "INTRADAY": 13,
+      "RS_INTRADAY": 5.77,
       "3D": -7.11,
       "5D": -14.1,
       "2W": -8.94,
@@ -474,12 +474,12 @@
       "RS_ADR_5D": 1.92,
       "RS_ADR_2W": 1.44,
       "RS_ADR_1M": -0.81,
-      "ADR_MULT_INTRADAY": 1.89,
-      "RS_ADR_INTRADAY": -0.92
+      "ADR_MULT_INTRADAY": 1.97,
+      "RS_ADR_INTRADAY": -0.82
     },
     "MSTR": {
-      "INTRADAY": 13.05,
-      "RS_INTRADAY": 5.76,
+      "INTRADAY": 12.94,
+      "RS_INTRADAY": 5.71,
       "3D": -19.35,
       "5D": -30.28,
       "2W": -39.64,
@@ -497,12 +497,12 @@
       "RS_ADR_5D": 0.52,
       "RS_ADR_2W": -1.83,
       "RS_ADR_1M": -0.18,
-      "ADR_MULT_INTRADAY": 1.52,
-      "RS_ADR_INTRADAY": -1.29
+      "ADR_MULT_INTRADAY": 1.51,
+      "RS_ADR_INTRADAY": -1.28
     },
     "PLTR": {
-      "INTRADAY": 10.39,
-      "RS_INTRADAY": 3.1,
+      "INTRADAY": 11.07,
+      "RS_INTRADAY": 3.84,
       "3D": -8.5,
       "5D": -14.72,
       "2W": -10.68,
@@ -520,12 +520,12 @@
       "RS_ADR_5D": 1.47,
       "RS_ADR_2W": 0.92,
       "RS_ADR_1M": 0.52,
-      "ADR_MULT_INTRADAY": 1.82,
-      "RS_ADR_INTRADAY": -0.99
+      "ADR_MULT_INTRADAY": 1.94,
+      "RS_ADR_INTRADAY": -0.85
     },
     "SKHY": {
-      "INTRADAY": 21.15,
-      "RS_INTRADAY": 13.86,
+      "INTRADAY": 21.43,
+      "RS_INTRADAY": 14.2,
       "3D": -16.28,
       "5D": -22.11,
       "2W": -19.39,
@@ -543,12 +543,12 @@
       "RS_ADR_5D": 0.8,
       "RS_ADR_2W": -0.06,
       "RS_ADR_1M": 2.01,
-      "ADR_MULT_INTRADAY": 3.11,
-      "RS_ADR_INTRADAY": 0.3
+      "ADR_MULT_INTRADAY": 3.15,
+      "RS_ADR_INTRADAY": 0.36
     },
     "SMCI": {
-      "INTRADAY": 15.7,
-      "RS_INTRADAY": 8.41,
+      "INTRADAY": 15.06,
+      "RS_INTRADAY": 7.83,
       "3D": -10.54,
       "5D": -19.63,
       "2W": -24.91,
@@ -566,12 +566,12 @@
       "RS_ADR_5D": 1.86,
       "RS_ADR_2W": 0.01,
       "RS_ADR_1M": 1.23,
-      "ADR_MULT_INTRADAY": 1.75,
-      "RS_ADR_INTRADAY": -1.06
+      "ADR_MULT_INTRADAY": 1.68,
+      "RS_ADR_INTRADAY": -1.11
     },
     "SPCX": {
-      "INTRADAY": 7.01,
-      "RS_INTRADAY": -0.28,
+      "INTRADAY": 7.4,
+      "RS_INTRADAY": 0.17,
       "3D": -9.8,
       "5D": -8.12,
       "2W": -4.8,
@@ -589,12 +589,12 @@
       "RS_ADR_5D": 2.49,
       "RS_ADR_2W": 1.87,
       "RS_ADR_1M": 3,
-      "ADR_MULT_INTRADAY": 1.35,
-      "RS_ADR_INTRADAY": -1.46
+      "ADR_MULT_INTRADAY": 1.42,
+      "RS_ADR_INTRADAY": -1.37
     },
     "SLB": {
-      "INTRADAY": 2.1,
-      "RS_INTRADAY": -5.19,
+      "INTRADAY": 2.28,
+      "RS_INTRADAY": -4.95,
       "3D": -6.44,
       "5D": -11.37,
       "2W": -8.26,
@@ -612,12 +612,12 @@
       "RS_ADR_5D": 0.7,
       "RS_ADR_2W": 0.36,
       "RS_ADR_1M": 3.02,
-      "ADR_MULT_INTRADAY": 0.62,
-      "RS_ADR_INTRADAY": -2.19
+      "ADR_MULT_INTRADAY": 0.67,
+      "RS_ADR_INTRADAY": -2.12
     },
     "CMG": {
-      "INTRADAY": 0.8,
-      "RS_INTRADAY": -6.49,
+      "INTRADAY": 0.72,
+      "RS_INTRADAY": -6.51,
       "3D": -1.05,
       "5D": 0.5,
       "2W": 2.98,
@@ -635,12 +635,12 @@
       "RS_ADR_5D": 4.22,
       "RS_ADR_2W": 3.79,
       "RS_ADR_1M": 13.95,
-      "ADR_MULT_INTRADAY": 0.27,
-      "RS_ADR_INTRADAY": -2.54
+      "ADR_MULT_INTRADAY": 0.24,
+      "RS_ADR_INTRADAY": -2.55
     },
     "APH": {
-      "INTRADAY": 9.52,
-      "RS_INTRADAY": 2.23,
+      "INTRADAY": 9.59,
+      "RS_INTRADAY": 2.36,
       "3D": -8.89,
       "5D": -11.07,
       "2W": -6.73,
@@ -658,12 +658,12 @@
       "RS_ADR_5D": 1.99,
       "RS_ADR_2W": 1.54,
       "RS_ADR_1M": 4.36,
-      "ADR_MULT_INTRADAY": 1.77,
-      "RS_ADR_INTRADAY": -1.04
+      "ADR_MULT_INTRADAY": 1.78,
+      "RS_ADR_INTRADAY": -1.01
     },
     "FCX": {
-      "INTRADAY": 8.61,
-      "RS_INTRADAY": 1.32,
+      "INTRADAY": 8.76,
+      "RS_INTRADAY": 1.53,
       "3D": -16.9,
       "5D": -22.43,
       "2W": -22.66,
@@ -681,12 +681,12 @@
       "RS_ADR_5D": -0.3,
       "RS_ADR_2W": -1.6,
       "RS_ADR_1M": -0.34,
-      "ADR_MULT_INTRADAY": 1.67,
-      "RS_ADR_INTRADAY": -1.14
+      "ADR_MULT_INTRADAY": 1.7,
+      "RS_ADR_INTRADAY": -1.09
     },
     "AMZN": {
-      "INTRADAY": 4.38,
-      "RS_INTRADAY": -2.91,
+      "INTRADAY": 4.22,
+      "RS_INTRADAY": -3.01,
       "3D": -4.31,
       "5D": -7.46,
       "2W": -4.83,
@@ -704,12 +704,12 @@
       "RS_ADR_5D": 1.94,
       "RS_ADR_2W": 1.43,
       "RS_ADR_1M": 4.84,
-      "ADR_MULT_INTRADAY": 1.24,
-      "RS_ADR_INTRADAY": -1.57
+      "ADR_MULT_INTRADAY": 1.19,
+      "RS_ADR_INTRADAY": -1.6
     },
     "CVNA": {
-      "INTRADAY": 6.08,
-      "RS_INTRADAY": -1.21,
+      "INTRADAY": 6.66,
+      "RS_INTRADAY": -0.57,
       "3D": -10.25,
       "5D": -11.83,
       "2W": -13.27,
@@ -727,12 +727,12 @@
       "RS_ADR_5D": 1.92,
       "RS_ADR_2W": 0.4,
       "RS_ADR_1M": 6.81,
-      "ADR_MULT_INTRADAY": 1.1,
-      "RS_ADR_INTRADAY": -1.71
+      "ADR_MULT_INTRADAY": 1.2,
+      "RS_ADR_INTRADAY": -1.59
     },
     "QCOM": {
-      "INTRADAY": 9.28,
-      "RS_INTRADAY": 1.99,
+      "INTRADAY": 9.93,
+      "RS_INTRADAY": 2.7,
       "3D": -10.13,
       "5D": -13.15,
       "2W": -9.44,
@@ -750,12 +750,12 @@
       "RS_ADR_5D": 1.68,
       "RS_ADR_2W": 1.09,
       "RS_ADR_1M": 2.85,
-      "ADR_MULT_INTRADAY": 1.68,
-      "RS_ADR_INTRADAY": -1.13
+      "ADR_MULT_INTRADAY": 1.79,
+      "RS_ADR_INTRADAY": -1
     },
     "CSCO": {
-      "INTRADAY": 5.97,
-      "RS_INTRADAY": -1.32,
+      "INTRADAY": 6.08,
+      "RS_INTRADAY": -1.15,
       "3D": -4.83,
       "5D": -5.35,
       "2W": -3.55,
@@ -773,12 +773,12 @@
       "RS_ADR_5D": 2.72,
       "RS_ADR_2W": 1.91,
       "RS_ADR_1M": 1.85,
-      "ADR_MULT_INTRADAY": 1.48,
-      "RS_ADR_INTRADAY": -1.33
+      "ADR_MULT_INTRADAY": 1.51,
+      "RS_ADR_INTRADAY": -1.28
     },
     "CVS": {
-      "INTRADAY": -1.41,
-      "RS_INTRADAY": -8.7,
+      "INTRADAY": -1.52,
+      "RS_INTRADAY": -8.75,
       "3D": -5.8,
       "5D": -9.54,
       "2W": -3.6,
@@ -796,12 +796,12 @@
       "RS_ADR_5D": 1.79,
       "RS_ADR_2W": 1.94,
       "RS_ADR_1M": 1.83,
-      "ADR_MULT_INTRADAY": -0.33,
-      "RS_ADR_INTRADAY": -3.14
+      "ADR_MULT_INTRADAY": -0.36,
+      "RS_ADR_INTRADAY": -3.15
     },
     "NVDA": {
-      "INTRADAY": 34.44,
-      "RS_INTRADAY": 27.15,
+      "INTRADAY": 32.74,
+      "RS_INTRADAY": 25.51,
       "3D": -19.06,
       "5D": -22.73,
       "2W": -32.58,
@@ -819,12 +819,12 @@
       "RS_ADR_5D": 0.64,
       "RS_ADR_2W": -2.1,
       "RS_ADR_1M": -0.86,
-      "ADR_MULT_INTRADAY": 5.17,
-      "RS_ADR_INTRADAY": 2.36
+      "ADR_MULT_INTRADAY": 4.92,
+      "RS_ADR_INTRADAY": 2.13
     },
     "ON": {
-      "INTRADAY": 8.58,
-      "RS_INTRADAY": 1.29,
+      "INTRADAY": 9.09,
+      "RS_INTRADAY": 1.86,
       "3D": -12.2,
       "5D": -16.07,
       "2W": -5.8,
@@ -842,12 +842,12 @@
       "RS_ADR_5D": 1.61,
       "RS_ADR_2W": 1.91,
       "RS_ADR_1M": 2.44,
-      "ADR_MULT_INTRADAY": 1.3,
-      "RS_ADR_INTRADAY": -1.51
+      "ADR_MULT_INTRADAY": 1.38,
+      "RS_ADR_INTRADAY": -1.41
     },
     "KLAC": {
-      "INTRADAY": 12.72,
-      "RS_INTRADAY": 5.43,
+      "INTRADAY": 13.27,
+      "RS_INTRADAY": 6.04,
       "3D": -11.94,
       "5D": -16.42,
       "2W": -8.08,
@@ -865,12 +865,12 @@
       "RS_ADR_5D": 1.3,
       "RS_ADR_2W": 1.44,
       "RS_ADR_1M": 2.93,
-      "ADR_MULT_INTRADAY": 2.13,
-      "RS_ADR_INTRADAY": -0.68
+      "ADR_MULT_INTRADAY": 2.22,
+      "RS_ADR_INTRADAY": -0.57
     },
     "AVGO": {
-      "INTRADAY": 1.78,
-      "RS_INTRADAY": -5.51,
+      "INTRADAY": 2.17,
+      "RS_INTRADAY": -5.06,
       "3D": -11.4,
       "5D": -12.78,
       "2W": 3.06,
@@ -888,12 +888,12 @@
       "RS_ADR_5D": 1.34,
       "RS_ADR_2W": 3.44,
       "RS_ADR_1M": 3.9,
-      "ADR_MULT_INTRADAY": 0.38,
-      "RS_ADR_INTRADAY": -2.43
+      "ADR_MULT_INTRADAY": 0.46,
+      "RS_ADR_INTRADAY": -2.33
     },
     "MCHP": {
-      "INTRADAY": 11.17,
-      "RS_INTRADAY": 3.88,
+      "INTRADAY": 11.4,
+      "RS_INTRADAY": 4.17,
       "3D": -6.85,
       "5D": -10.25,
       "2W": -5.12,
@@ -911,12 +911,12 @@
       "RS_ADR_5D": 2.7,
       "RS_ADR_2W": 2.11,
       "RS_ADR_1M": 1.86,
-      "ADR_MULT_INTRADAY": 1.47,
-      "RS_ADR_INTRADAY": -1.34
+      "ADR_MULT_INTRADAY": 1.5,
+      "RS_ADR_INTRADAY": -1.29
     },
     "IONQ": {
-      "INTRADAY": 15.19,
-      "RS_INTRADAY": 7.9,
+      "INTRADAY": 14.45,
+      "RS_INTRADAY": 7.22,
       "3D": -16.65,
       "5D": -28.31,
       "2W": -36.53,
@@ -934,12 +934,12 @@
       "RS_ADR_5D": 1.72,
       "RS_ADR_2W": -0.21,
       "RS_ADR_1M": 2.49,
-      "ADR_MULT_INTRADAY": 1.25,
-      "RS_ADR_INTRADAY": -1.56
+      "ADR_MULT_INTRADAY": 1.19,
+      "RS_ADR_INTRADAY": -1.6
     },
     "RKLB": {
-      "INTRADAY": 10.61,
-      "RS_INTRADAY": 3.32,
+      "INTRADAY": 10.81,
+      "RS_INTRADAY": 3.58,
       "3D": -17.72,
       "5D": -26.39,
       "2W": -14.65,
@@ -957,12 +957,12 @@
       "RS_ADR_5D": 1.47,
       "RS_ADR_2W": 1.36,
       "RS_ADR_1M": 4.12,
-      "ADR_MULT_INTRADAY": 1.04,
-      "RS_ADR_INTRADAY": -1.77
+      "ADR_MULT_INTRADAY": 1.06,
+      "RS_ADR_INTRADAY": -1.73
     },
     "BSX": {
-      "INTRADAY": 0.29,
-      "RS_INTRADAY": -7,
+      "INTRADAY": 0.55,
+      "RS_INTRADAY": -6.68,
       "3D": -2.48,
       "5D": -5.36,
       "2W": -1.84,
@@ -980,12 +980,12 @@
       "RS_ADR_5D": 2.6,
       "RS_ADR_2W": 2.29,
       "RS_ADR_1M": 2.88,
-      "ADR_MULT_INTRADAY": 0.08,
-      "RS_ADR_INTRADAY": -2.73
+      "ADR_MULT_INTRADAY": 0.15,
+      "RS_ADR_INTRADAY": -2.64
     },
     "ORCL": {
-      "INTRADAY": 13.17,
-      "RS_INTRADAY": 5.88,
+      "INTRADAY": 12.9,
+      "RS_INTRADAY": 5.67,
       "3D": -12.39,
       "5D": -19.63,
       "2W": -13.22,
@@ -1003,12 +1003,12 @@
       "RS_ADR_5D": 1.02,
       "RS_ADR_2W": 0.75,
       "RS_ADR_1M": 2.2,
-      "ADR_MULT_INTRADAY": 2.04,
-      "RS_ADR_INTRADAY": -0.77
+      "ADR_MULT_INTRADAY": 1.99,
+      "RS_ADR_INTRADAY": -0.8
     },
     "ASTS": {
-      "INTRADAY": 12.66,
-      "RS_INTRADAY": 5.37,
+      "INTRADAY": 12.08,
+      "RS_INTRADAY": 4.85,
       "3D": -16.07,
       "5D": -28.97,
       "2W": -28.38,
@@ -1026,12 +1026,12 @@
       "RS_ADR_5D": 2.15,
       "RS_ADR_2W": 0.93,
       "RS_ADR_1M": 2.61,
-      "ADR_MULT_INTRADAY": 0.83,
-      "RS_ADR_INTRADAY": -1.98
+      "ADR_MULT_INTRADAY": 0.79,
+      "RS_ADR_INTRADAY": -2
     },
     "CBRS": {
-      "INTRADAY": 20.14,
-      "RS_INTRADAY": 12.85,
+      "INTRADAY": 20.15,
+      "RS_INTRADAY": 12.92,
       "3D": -20.88,
       "5D": -24.18,
       "2W": -8.08,
@@ -1050,11 +1050,11 @@
       "RS_ADR_2W": 2.08,
       "RS_ADR_1M": 3.13,
       "ADR_MULT_INTRADAY": 1.76,
-      "RS_ADR_INTRADAY": -1.05
+      "RS_ADR_INTRADAY": -1.03
     },
     "APP": {
-      "INTRADAY": 9.21,
-      "RS_INTRADAY": 1.92,
+      "INTRADAY": 8.87,
+      "RS_INTRADAY": 1.64,
       "3D": -12.8,
       "5D": -14.96,
       "2W": -11.08,
@@ -1072,12 +1072,12 @@
       "RS_ADR_5D": 1.59,
       "RS_ADR_2W": 0.97,
       "RS_ADR_1M": 10.45,
-      "ADR_MULT_INTRADAY": 1.51,
-      "RS_ADR_INTRADAY": -1.3
+      "ADR_MULT_INTRADAY": 1.46,
+      "RS_ADR_INTRADAY": -1.33
     },
     "ROIV": {
-      "INTRADAY": 3.63,
-      "RS_INTRADAY": -3.66,
+      "INTRADAY": 4.02,
+      "RS_INTRADAY": -3.21,
       "3D": -0.35,
       "5D": -2.42,
       "2W": -0.78,
@@ -1095,12 +1095,12 @@
       "RS_ADR_5D": 3.46,
       "RS_ADR_2W": 2.6,
       "RS_ADR_1M": 5.99,
-      "ADR_MULT_INTRADAY": 0.89,
-      "RS_ADR_INTRADAY": -1.92
+      "ADR_MULT_INTRADAY": 0.99,
+      "RS_ADR_INTRADAY": -1.8
     },
     "KDP": {
-      "INTRADAY": 1.32,
-      "RS_INTRADAY": -5.97,
+      "INTRADAY": 1.52,
+      "RS_INTRADAY": -5.71,
       "3D": 0.1,
       "5D": -4.17,
       "2W": -4.93,
@@ -1118,12 +1118,12 @@
       "RS_ADR_5D": 2.9,
       "RS_ADR_2W": 1.42,
       "RS_ADR_1M": 4.96,
-      "ADR_MULT_INTRADAY": 0.37,
-      "RS_ADR_INTRADAY": -2.44
+      "ADR_MULT_INTRADAY": 0.42,
+      "RS_ADR_INTRADAY": -2.37
     },
     "MDLN": {
       "INTRADAY": 4.17,
-      "RS_INTRADAY": -3.12,
+      "RS_INTRADAY": -3.06,
       "3D": -1.73,
       "5D": -6.18,
       "2W": -6.58,
@@ -1142,11 +1142,11 @@
       "RS_ADR_2W": 1.5,
       "RS_ADR_1M": 6.46,
       "ADR_MULT_INTRADAY": 0.82,
-      "RS_ADR_INTRADAY": -1.99
+      "RS_ADR_INTRADAY": -1.97
     },
     "TSCO": {
-      "INTRADAY": -1.22,
-      "RS_INTRADAY": -8.51,
+      "INTRADAY": -1.87,
+      "RS_INTRADAY": -9.1,
       "3D": -0.1,
       "5D": 5.49,
       "2W": 5.78,
@@ -1164,12 +1164,12 @@
       "RS_ADR_5D": 5.66,
       "RS_ADR_2W": 4.48,
       "RS_ADR_1M": 8.39,
-      "ADR_MULT_INTRADAY": -0.36,
-      "RS_ADR_INTRADAY": -3.17
+      "ADR_MULT_INTRADAY": -0.55,
+      "RS_ADR_INTRADAY": -3.34
     },
     "CMCSA": {
-      "INTRADAY": -1.16,
-      "RS_INTRADAY": -8.45,
+      "INTRADAY": -0.84,
+      "RS_INTRADAY": -8.07,
       "3D": -1.68,
       "5D": -1.09,
       "2W": 2.03,
@@ -1187,12 +1187,12 @@
       "RS_ADR_5D": 3.63,
       "RS_ADR_2W": 3.56,
       "RS_ADR_1M": 8.66,
-      "ADR_MULT_INTRADAY": -0.44,
-      "RS_ADR_INTRADAY": -3.25
+      "ADR_MULT_INTRADAY": -0.32,
+      "RS_ADR_INTRADAY": -3.11
     },
     "TSM": {
-      "INTRADAY": 16.04,
-      "RS_INTRADAY": 8.75,
+      "INTRADAY": 15.58,
+      "RS_INTRADAY": 8.35,
       "3D": -11.07,
       "5D": -19.78,
       "2W": -14.8,
@@ -1210,12 +1210,12 @@
       "RS_ADR_5D": -0.33,
       "RS_ADR_2W": -0.48,
       "RS_ADR_1M": 0.29,
-      "ADR_MULT_INTRADAY": 3.55,
-      "RS_ADR_INTRADAY": 0.74
+      "ADR_MULT_INTRADAY": 3.45,
+      "RS_ADR_INTRADAY": 0.66
     },
     "SNDK": {
-      "INTRADAY": 16.75,
-      "RS_INTRADAY": 9.46,
+      "INTRADAY": 16.58,
+      "RS_INTRADAY": 9.35,
       "3D": -20.82,
       "5D": -28.67,
       "2W": -24.4,
@@ -1233,12 +1233,12 @@
       "RS_ADR_5D": 1.53,
       "RS_ADR_2W": 0.64,
       "RS_ADR_1M": 0.86,
-      "ADR_MULT_INTRADAY": 1.47,
-      "RS_ADR_INTRADAY": -1.34
+      "ADR_MULT_INTRADAY": 1.46,
+      "RS_ADR_INTRADAY": -1.33
     },
     "ABNB": {
       "INTRADAY": 2.71,
-      "RS_INTRADAY": -4.58,
+      "RS_INTRADAY": -4.52,
       "3D": -5.89,
       "5D": -8.83,
       "2W": -10.37,
@@ -1257,11 +1257,11 @@
       "RS_ADR_2W": 0.18,
       "RS_ADR_1M": 4.47,
       "ADR_MULT_INTRADAY": 0.68,
-      "RS_ADR_INTRADAY": -2.13
+      "RS_ADR_INTRADAY": -2.11
     },
     "GEN": {
-      "INTRADAY": 0.96,
-      "RS_INTRADAY": -6.33,
+      "INTRADAY": 1.35,
+      "RS_INTRADAY": -5.88,
       "3D": -1.13,
       "5D": -4,
       "2W": -2.03,
@@ -1279,12 +1279,12 @@
       "RS_ADR_5D": 2.82,
       "RS_ADR_2W": 2.17,
       "RS_ADR_1M": 10.55,
-      "ADR_MULT_INTRADAY": 0.29,
-      "RS_ADR_INTRADAY": -2.52
+      "ADR_MULT_INTRADAY": 0.41,
+      "RS_ADR_INTRADAY": -2.38
     },
     "NKE": {
       "INTRADAY": 1.99,
-      "RS_INTRADAY": -5.3,
+      "RS_INTRADAY": -5.24,
       "3D": -8.12,
       "5D": -13.29,
       "2W": -14.64,
@@ -1303,11 +1303,11 @@
       "RS_ADR_2W": -0.49,
       "RS_ADR_1M": 2.1,
       "ADR_MULT_INTRADAY": 0.45,
-      "RS_ADR_INTRADAY": -2.36
+      "RS_ADR_INTRADAY": -2.34
     },
     "GOOGL": {
-      "INTRADAY": 6.46,
-      "RS_INTRADAY": -0.83,
+      "INTRADAY": 6.5,
+      "RS_INTRADAY": -0.73,
       "3D": -5.36,
       "5D": -10.34,
       "2W": -6.88,
@@ -1325,12 +1325,12 @@
       "RS_ADR_5D": 1.16,
       "RS_ADR_2W": 0.87,
       "RS_ADR_1M": 0.16,
-      "ADR_MULT_INTRADAY": 1.8,
-      "RS_ADR_INTRADAY": -1.01
+      "ADR_MULT_INTRADAY": 1.82,
+      "RS_ADR_INTRADAY": -0.97
     },
     "GOOG": {
-      "INTRADAY": 6.11,
-      "RS_INTRADAY": -1.18,
+      "INTRADAY": 6.19,
+      "RS_INTRADAY": -1.04,
       "3D": -5,
       "5D": -9.85,
       "2W": -7.12,
@@ -1348,12 +1348,12 @@
       "RS_ADR_5D": 1.31,
       "RS_ADR_2W": 0.81,
       "RS_ADR_1M": 0.3,
-      "ADR_MULT_INTRADAY": 1.7,
-      "RS_ADR_INTRADAY": -1.11
+      "ADR_MULT_INTRADAY": 1.72,
+      "RS_ADR_INTRADAY": -1.07
     },
     "UBER": {
-      "INTRADAY": 3.14,
-      "RS_INTRADAY": -4.15,
+      "INTRADAY": 2.99,
+      "RS_INTRADAY": -4.24,
       "3D": -7.89,
       "5D": -9.05,
       "2W": -7.6,
@@ -1371,12 +1371,12 @@
       "RS_ADR_5D": 1.59,
       "RS_ADR_2W": 0.72,
       "RS_ADR_1M": 3.01,
-      "ADR_MULT_INTRADAY": 0.85,
-      "RS_ADR_INTRADAY": -1.96
+      "ADR_MULT_INTRADAY": 0.81,
+      "RS_ADR_INTRADAY": -1.98
     },
     "META": {
-      "INTRADAY": 6.04,
-      "RS_INTRADAY": -1.25,
+      "INTRADAY": 5.76,
+      "RS_INTRADAY": -1.47,
       "3D": -9.39,
       "5D": -12.62,
       "2W": -8.1,
@@ -1394,12 +1394,12 @@
       "RS_ADR_5D": 0.26,
       "RS_ADR_2W": 0.36,
       "RS_ADR_1M": 1.17,
-      "ADR_MULT_INTRADAY": 1.81,
-      "RS_ADR_INTRADAY": -1
+      "ADR_MULT_INTRADAY": 1.73,
+      "RS_ADR_INTRADAY": -1.06
     },
     "BABA": {
-      "INTRADAY": 6.94,
-      "RS_INTRADAY": -0.35,
+      "INTRADAY": 6.98,
+      "RS_INTRADAY": -0.25,
       "3D": -6.46,
       "5D": -14.12,
       "2W": -25.95,
@@ -1417,12 +1417,12 @@
       "RS_ADR_5D": 0.09,
       "RS_ADR_2W": -4.48,
       "RS_ADR_1M": -0.47,
-      "ADR_MULT_INTRADAY": 1.94,
-      "RS_ADR_INTRADAY": -0.87
+      "ADR_MULT_INTRADAY": 1.96,
+      "RS_ADR_INTRADAY": -0.83
     },
     "DAL": {
-      "INTRADAY": 4.79,
-      "RS_INTRADAY": -2.5,
+      "INTRADAY": 4.96,
+      "RS_INTRADAY": -2.27,
       "3D": -5.12,
       "5D": -7.27,
       "2W": -8.28,
@@ -1440,12 +1440,12 @@
       "RS_ADR_5D": 1.77,
       "RS_ADR_2W": 0.19,
       "RS_ADR_1M": 5.54,
-      "ADR_MULT_INTRADAY": 1.51,
-      "RS_ADR_INTRADAY": -1.3
+      "ADR_MULT_INTRADAY": 1.56,
+      "RS_ADR_INTRADAY": -1.23
     },
     "KHC": {
-      "INTRADAY": -0.26,
-      "RS_INTRADAY": -7.55,
+      "INTRADAY": -0.63,
+      "RS_INTRADAY": -7.86,
       "3D": 1.06,
       "5D": 1.06,
       "2W": 3.11,
@@ -1463,12 +1463,12 @@
       "RS_ADR_5D": 4.44,
       "RS_ADR_2W": 3.95,
       "RS_ADR_1M": 5.67,
-      "ADR_MULT_INTRADAY": -0.1,
-      "RS_ADR_INTRADAY": -2.91
+      "ADR_MULT_INTRADAY": -0.24,
+      "RS_ADR_INTRADAY": -3.03
     },
     "HD": {
-      "INTRADAY": 2.46,
-      "RS_INTRADAY": -4.83,
+      "INTRADAY": 2.19,
+      "RS_INTRADAY": -5.04,
       "3D": -0.07,
       "5D": -2.84,
       "2W": -1.37,
@@ -1486,12 +1486,12 @@
       "RS_ADR_5D": 2.97,
       "RS_ADR_2W": 2.27,
       "RS_ADR_1M": 6.53,
-      "ADR_MULT_INTRADAY": 0.93,
-      "RS_ADR_INTRADAY": -1.88
+      "ADR_MULT_INTRADAY": 0.83,
+      "RS_ADR_INTRADAY": -1.96
     },
     "SYK": {
-      "INTRADAY": 0.68,
-      "RS_INTRADAY": -6.61,
+      "INTRADAY": 0.83,
+      "RS_INTRADAY": -6.4,
       "3D": -2.44,
       "5D": 0.05,
       "2W": -4.94,
@@ -1509,12 +1509,12 @@
       "RS_ADR_5D": 4.06,
       "RS_ADR_2W": 1.22,
       "RS_ADR_1M": 5.53,
-      "ADR_MULT_INTRADAY": 0.22,
-      "RS_ADR_INTRADAY": -2.59
+      "ADR_MULT_INTRADAY": 0.26,
+      "RS_ADR_INTRADAY": -2.53
     },
     "OXY": {
-      "INTRADAY": -0.69,
-      "RS_INTRADAY": -7.98,
+      "INTRADAY": -0.76,
+      "RS_INTRADAY": -7.99,
       "3D": -4.92,
       "5D": -8.53,
       "2W": -4.68,
@@ -1532,12 +1532,12 @@
       "RS_ADR_5D": 1.5,
       "RS_ADR_2W": 1.39,
       "RS_ADR_1M": 1.06,
-      "ADR_MULT_INTRADAY": -0.21,
+      "ADR_MULT_INTRADAY": -0.23,
       "RS_ADR_INTRADAY": -3.02
     },
     "DVN": {
-      "INTRADAY": -0.5,
-      "RS_INTRADAY": -7.79,
+      "INTRADAY": -0.46,
+      "RS_INTRADAY": -7.69,
       "3D": -4.73,
       "5D": -11.11,
       "2W": -1.91,
@@ -1555,12 +1555,12 @@
       "RS_ADR_5D": 1.55,
       "RS_ADR_2W": 2.36,
       "RS_ADR_1M": 1.7,
-      "ADR_MULT_INTRADAY": -0.11,
-      "RS_ADR_INTRADAY": -2.92
+      "ADR_MULT_INTRADAY": -0.1,
+      "RS_ADR_INTRADAY": -2.89
     },
     "TJX": {
-      "INTRADAY": 0.03,
-      "RS_INTRADAY": -7.26,
+      "INTRADAY": -0.32,
+      "RS_INTRADAY": -7.55,
       "3D": 7.44,
       "5D": 3.82,
       "2W": 3.11,
@@ -1578,12 +1578,12 @@
       "RS_ADR_5D": 5.27,
       "RS_ADR_2W": 3.78,
       "RS_ADR_1M": 3.54,
-      "ADR_MULT_INTRADAY": 0.01,
-      "RS_ADR_INTRADAY": -2.8
+      "ADR_MULT_INTRADAY": -0.1,
+      "RS_ADR_INTRADAY": -2.89
     },
     "MSFT": {
-      "INTRADAY": 3.3,
-      "RS_INTRADAY": -3.99,
+      "INTRADAY": 2.99,
+      "RS_INTRADAY": -4.24,
       "3D": -4.48,
       "5D": -7.7,
       "2W": -8.87,
@@ -1601,12 +1601,12 @@
       "RS_ADR_5D": 1.71,
       "RS_ADR_2W": 0.1,
       "RS_ADR_1M": 3.06,
-      "ADR_MULT_INTRADAY": 1,
-      "RS_ADR_INTRADAY": -1.81
+      "ADR_MULT_INTRADAY": 0.91,
+      "RS_ADR_INTRADAY": -1.88
     },
     "SBUX": {
-      "INTRADAY": 2.24,
-      "RS_INTRADAY": -5.05,
+      "INTRADAY": 2.35,
+      "RS_INTRADAY": -4.88,
       "3D": -4.18,
       "5D": -3.23,
       "2W": -2.29,
@@ -1624,12 +1624,12 @@
       "RS_ADR_5D": 2.99,
       "RS_ADR_2W": 2.04,
       "RS_ADR_1M": 5.6,
-      "ADR_MULT_INTRADAY": 0.73,
-      "RS_ADR_INTRADAY": -2.08
+      "ADR_MULT_INTRADAY": 0.77,
+      "RS_ADR_INTRADAY": -2.02
     },
     "MRK": {
-      "INTRADAY": 1.33,
-      "RS_INTRADAY": -5.96,
+      "INTRADAY": 1.02,
+      "RS_INTRADAY": -6.21,
       "3D": -7.02,
       "5D": -9.79,
       "2W": -9.15,
@@ -1647,28 +1647,28 @@
       "RS_ADR_5D": 0.89,
       "RS_ADR_2W": -0.17,
       "RS_ADR_1M": 2.19,
-      "ADR_MULT_INTRADAY": 0.43,
-      "RS_ADR_INTRADAY": -2.38
+      "ADR_MULT_INTRADAY": 0.33,
+      "RS_ADR_INTRADAY": -2.46
     },
     "GLW": {
-      "INTRADAY": 15.79,
-      "RS_INTRADAY": 8.5
+      "INTRADAY": 16.27,
+      "RS_INTRADAY": 9.04
     },
     "CRCL": {
-      "INTRADAY": 9.83,
-      "RS_INTRADAY": 2.54
+      "INTRADAY": 11.24,
+      "RS_INTRADAY": 4.01
     },
     "C": {
-      "INTRADAY": 3.58,
-      "RS_INTRADAY": -3.71
+      "INTRADAY": 3.86,
+      "RS_INTRADAY": -3.37
     },
     "NFLX": {
-      "INTRADAY": 2.25,
-      "RS_INTRADAY": -5.04
+      "INTRADAY": 2.14,
+      "RS_INTRADAY": -5.09
     },
     "TGT": {
-      "INTRADAY": 0.92,
-      "RS_INTRADAY": -6.37
+      "INTRADAY": 1.26,
+      "RS_INTRADAY": -5.97
     }
   }
 }
